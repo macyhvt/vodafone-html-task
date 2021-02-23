@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Album example · Bootstrap v5.0</title>
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      <!--start Edited Manoj Kumar-->
+      .fw-dark{font-weight: 300 !important;}
+      .fw-dark:after {
+          content: "";  
+          display: block;
+          margin: 0 auto;
+          width: 10%; 
+          padding-top: 5px;
+          border-bottom: 3px solid rgb(236, 6, 6);
+      }
+      .shadow-sm{
+          height: 139px;
+      }
+      .m-nav{
+          font-weight: bold;
+          font-size: 17pt;
+      }
+      .nav-item{
+        border:none !important;
+      }
+      .nav-tabs{
+        padding-bottom: 23px;
+      }
+      .nav-link{
+        border:none !important;
+      }
+      .card-text{
+          color: #fff;text-align: center;padding: 11px;background: #000;
+          }
+      .vdetail{
+          text-align: center;padding: 11px;
+          }
+      .vrow{
+          padding-bottom: 14px;
+          }
+      .mb-1{
+           text-align: center;
+          }
+      @media (max-width: 500px) {
+        .d-flexs {
+          display:none !important;
+        }
+      }          
+       <!--end Edited Manoj Kumar-->
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+  </head>
+  <body>
+    
+<header>
+  <!--start Edited nav Manoj Kumar-->
+   <div class="navbar navbar-light">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <img src="assets/images/vodafone_logo.svg" width="265"/>
+      </a>
+      <form class="d-flexs">
+        <input class="form-control me-2" type="search" placeholder="Search for contact" aria-label="Search">
+      </form>
+    </div>
+  </div>
+</header>
+<!--end Edited nav Manoj Kumar-->
+<main>
+
+  <div class="album py-5">
+    <div class="container">
+      <!--start Edited dataset Manoj Kumar-->
+        <div class="col-lg-6 col-md-8 mx-auto text-center">
+            <h1 class="fw-dark">Contacts</h1>
+          </div>
+        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link m-nav active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link m-nav" id="c-tab" data-bs-toggle="tab" data-bs-target="#c" type="button" role="tab" aria-controls="c" aria-selected="false">C</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link m-nav" id="f-tab" data-bs-toggle="tab" data-bs-target="#f" type="button" role="tab" aria-controls="f" aria-selected="false">F</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link m-nav" id="k-tab" data-bs-toggle="tab" data-bs-target="#k" type="button" role="tab" aria-controls="k" aria-selected="false">K</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link m-nav" id="n-tab" data-bs-toggle="tab" data-bs-target="#n" type="button" role="tab" aria-controls="n" aria-selected="false">N</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link m-nav" id="t-tab" data-bs-toggle="tab" data-bs-target="#t" type="button" role="tab" aria-controls="t" aria-selected="false">T</button>
+              </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+
+            <div class="col tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 vrow">
+                <div class="card shadow-sm">
+                    <label class="card-text">Kiss Bence</label>
+                    <label class="vdetail">bence.kiss@kissbence.com</label>
+                    <label class="vdetail">+3670303030</label>
+                </div>
+
+                <div class="card shadow-sm">
+                    <label class="card-text">Kovacs Ibolya</label>
+                    <label class="vdetail">ibolya.kovacs@kovacsibolya.com</label>
+                    <label class="vdetail">+3670505050</label>
+                </div>
+                
+                <div class="card shadow-sm">
+                    <label class="card-text">Nagy David</label>
+                    <label class="vdetail">david.nagy@nagydavid.com</label>
+                    <label class="vdetail">+3670404040</label>
+                </div>
+
+              </div>
+
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 vrow">
+                <div class="card shadow-sm">
+                    <label class="card-text">Apro Ballint</label>
+                    <label class="vdetail">ballint.apro@aproballint.com</label>
+                    <label class="vdetail">+3670504040</label>
+                </div>
+
+                <div class="card shadow-sm">
+                    <label class="card-text">Czondor Laszlo</label>
+                    <label class="vdetail">laszlo.czondor@czondorlaszlo.com</label>
+                    <label class="vdetail">+3670604040</label>
+                </div>
+                
+                <div class="card shadow-sm">
+                    <label class="card-text">Nagy Renata</label>
+                    <label class="vdetail">renata.nagy@nagyrenata.com</label>
+                    <label class="vdetail">+3670404040</label>
+                </div>
+
+              </div>
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 vrow">
+                <div class="card shadow-sm">
+                    <label class="card-text">David Zoltan</label>
+                    <label class="vdetail">zoltan.david@davidzoltan.com</label>
+                    <label class="vdetail">+3670804040</label>
+                </div>
+
+                <div class="card shadow-sm">
+                    <label class="card-text">Toth Tamas</label>
+                    <label class="vdetail">tamas.toth@tothtamas.com</label>
+                    <label class="vdetail">+3670409090</label>
+                </div>
+                
+                <div class="card shadow-sm">
+                    <label class="card-text">Fodor Bernadett</label>
+                    <label class="vdetail">bernadett.fodor@fodorbernadett.com</label>
+                    <label class="vdetail">+3670104040</label>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="tab-pane fade" id="c" role="tabpanel" aria-labelledby="c-tab">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 vrow">
+                <div class="card shadow-sm">
+                    <label class="card-text">Czondor Laszlo</label>
+                    <label class="vdetail">laszlo.czondor@czondorlaszlo.com</label>
+                    <label class="vdetail">+3670604040</label>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="f" role="tabpanel" aria-labelledby="f-tab">No Result</div>
+            <div class="tab-pane fade" id="k" role="tabpanel" aria-labelledby="k-tab">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 vrow">
+                <div class="card shadow-sm">
+                  <label class="card-text">Kiss Bence</label>
+                  <label class="vdetail">bence.kiss@kissbence.com</label>
+                  <label class="vdetail">+3670303030</label>
+                </div>
+
+                <div class="card shadow-sm">
+                    <label class="card-text">Kovacs Ibolya</label>
+                    <label class="vdetail">ibolya.kovacs@kovacsibolya.com</label>
+                    <label class="vdetail">+3670505050</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="n" role="tabpanel" aria-labelledby="n-tab">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 vrow">
+                <div class="card shadow-sm">
+                  <label class="card-text">Nagy David</label>
+                  <label class="vdetail">david.nagy@nagydavid.com</label>
+                  <label class="vdetail">+3670404040</label>
+                 </div>
+
+                 <div class="card shadow-sm">
+                  <label class="card-text">Nagy Renata</label>
+                  <label class="vdetail">renata.nagy@nagyrenata.com</label>
+                  <label class="vdetail">+3670404040</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="t" role="tabpanel" aria-labelledby="t-tab">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 vrow">
+                <div class="card shadow-sm">
+                  <label class="card-text">Toth Tamas</label>
+                  <label class="vdetail">tamas.toth@tothtamas.com</label>
+                  <label class="vdetail">+3670409090</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <!--end Edited dataset Manoj Kumar-->
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+        <a href="#"> <img src="assets/images/plus-icon.png" width="40"/></a>
+      </p>
+    <p class="mb-1">All right reserved.VSSB 2018.</p>
+  </div>
+</footer>
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
